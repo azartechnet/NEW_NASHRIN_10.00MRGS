@@ -1,0 +1,18 @@
+<!--Hide the elements-->
+<style>
+  .hide {
+    display: block;
+    background-color: red;
+  }
+
+  @media (max-width: 500px) {
+    .hide {
+      display: inline;
+      background-color: yellow;
+    }
+  }
+</style>
+<div class="hide">
+    This text will only be visible when the viewport is at least 768px wide.
+    Resize the browser window to see the effect.
+</div>

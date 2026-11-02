@@ -1,0 +1,86 @@
+<!--Reposive StudentProfileCard-->
+<html>
+    <head>
+        <title>Responsive Student Profile Card</title>
+        <style>
+         
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f4f4f4;
+            }
+
+            .card {
+                width: 300px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+                text-align: center;
+            }
+
+            .card-header {
+                padding: 20px;
+            }
+
+            .profile-image {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .card-body {
+                padding: 20px;
+            }
+
+            .card-footer {
+                padding: 20px;
+                background-color: #f1f1f1;
+            }
+
+            .contact-btn {
+                padding: 10px 20px;
+                background-color: #007BFF;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .contact-btn:hover {
+                background-color: #0056b3;
+            }
+
+            @media (max-width: 600px) {
+                .card {
+                    width: 90%;
+                    margin-top: 20px;
+                }
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="card">
+            <div class="card-header">
+                <img src="images/b2.jpeg" alt="Student Image" class="profile-image">
+                <h2>John Doe</h2>
+                <p>Computer Science Student</p>
+            </div>
+            <div class="card-body">
+                <p><strong>Email:</strong>
+            </p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Main St, City, Country</p>
+            </div>
+            <div class="card-footer">
+                <button class="contact-btn">Contact</button>
+            </div>
+        </div>
+        
+</html>
